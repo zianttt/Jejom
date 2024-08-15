@@ -162,6 +162,4 @@ cython_debug/
 #.idea/
 
 
-
-# custom
-api_key.py
+.env

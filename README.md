@@ -9,8 +9,8 @@
 - <code>pip install tavily-python==0.2.8</code>
 - <code>pip install llama-index-tools-tavily-research</code>
 
-
-<!-- - conda create -n jejom_lc python=3.10
+<!-- 
+- conda create -n jejom_lc python=3.10
 - conda acitvate jejom_lc
 - conda install langchain
 - pip install tavily-python==0.2.8
@@ -24,4 +24,5 @@
 - pip install flask
 - pip install flask_cors
 - pip install openai
-- pip install pandas -->
+- pip install pandas
+- pip install langchain-groq -->

@@ -1,7 +1,7 @@
 from langchain_upstage import ChatUpstage
 from langchain.tools import tool
-from api_key import TAVILY_API_KEY, UPSTAGE_API_KEY
-from tavily import TavilyClient
+from api_keys import TAVILY_API_KEY, UPSTAGE_API_KEY
+from tavily_test import TavilyClient
 import json
  
  

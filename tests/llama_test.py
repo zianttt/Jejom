@@ -1,12 +1,13 @@
 import os
-from llama_index.llms.upstage import Upstage
+# from llama_index.llms.upstage import Upstage
+from llama_index.llms.groq import Groq
 from llama_index.core.llms import ChatMessage
 from llama_index.tools.tavily_research.base import TavilyToolSpec
 # from llama_index.core.tools.tool_spec import TavilyToolSpec
 from llama_index.core.tools import BaseTool, FunctionTool
 from llama_index.core.agent import ReActAgent
-from tavily import TavilyClient
-from api_key import TAVILY_API_KEY, UPSTAGE_API_KEY
+from tavily_test import TavilyClient
+from api_keys import TAVILY_API_KEY, UPSTAGE_API_KEY, GROQ_API_KEY
 from system_prompts import HOTEL_SP, CAFE_SP, SPOTS_SP, MASTER_PLANNER_SP
 
 # set api keys
@@ -39,16 +40,15 @@ tavily = FunctionTool.from_defaults(fn=tavily_browser_tool)
 # for tool in tavily_tool_list:
 #     print(tool.metadata.name)
 
-llm1 = Upstage(model='solar-1-mini-chat')
-llm2 = Upstage(model='solar-1-mini-chat')
-llm3 = Upstage(model='solar-1-mini-chat')
-llm4 = Upstage(model='solar-1-mini-chat')
+# llm1 = Upstage(model='solar-1-mini-chat')
+llm = Groq(model='llama3-groq-70b-8192-tool-use-preview', api_key=GROQ_API_KEY)
 
 
-agent1 = ReActAgent.from_tools(tools=[tavily], llm=llm1, verbose=VERBOSE)
-agent2 = ReActAgent.from_tools(tools=[tavily], llm=llm2, verbose=VERBOSE)
-agent3 = ReActAgent.from_tools(tools=[tavily], llm=llm3, verbose=VERBOSE)
-agent4 = ReActAgent.from_tools(tools=[tavily], llm=llm4, verbose=VERBOSE)
+
+agent1 = ReActAgent.from_tools(tools=[tavily], llm=llm, verbose=VERBOSE)
+agent2 = ReActAgent.from_tools(tools=[tavily], llm=llm, verbose=VERBOSE)
+agent3 = ReActAgent.from_tools(tools=[tavily], llm=llm, verbose=VERBOSE)
+agent4 = ReActAgent.from_tools(tools=[tavily], llm=llm, verbose=VERBOSE)
 
 
 
