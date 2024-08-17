@@ -23,9 +23,8 @@ Settings.llm = Groq(model='llama3-groq-70b-8192-tool-use-preview')
 # Config
 VERBOSE = False
 
-end_user_specs = "Likes travelling alone, photography, male, 22, INFJ"
-# end_user_specs = "Likes group travelling, loves camping, artistic, female, 25, ENTJ"
-num_spots = 5
+end_user_specs = 'City Lover, Male, 30, ENTJ, Loves beachball'
+num_accomodations = 5
 max_json_try = 3
 
 
@@ -48,26 +47,39 @@ def tavily_browser_tool_address(input: str) -> str:
     print(">>> tavily", str(info)) if VERBOSE else None
     return str(info)
 
+def tavily_browser_tool_rating(input: str) -> str:
+    tavily = TavilyClient()
+    info = tavily.search(query=f"Rating of {input}", search_depth="advanced")
+    print(">>> tavily", str(info)) if VERBOSE else None
+    return str(info)
 
-destination_detail_top_orchestrator_agent = OpenAIAgent.from_tools(
+def tavily_browser_tool_provider(input: str) -> str:
+    tavily = TavilyClient()
+    info = tavily.search(query=f"Provider of {input}", search_depth="advanced")
+    print(">>> tavily", str(info)) if VERBOSE else None
+    return str(info)
+
+
+accomodation_detail_top_orchestrator_agent = OpenAIAgent.from_tools(
     system_prompt="""
-        You are an assistant model that returns the details of a tourist destination given its name.
-        Your response MUST be in the form of a JSON object, and MUST contain only the following attributes for the JSON object: 'Name', 'Description', 'Price', 'Address', 'Latitude', 'Longtitude'.
+        You are an assistant model that returns the details of a tourist accomodation given its name.
+        Your response MUST be in the form of a JSON object, and MUST contain only the following attributes for the JSON object: 'Name', 'Address', 'Price', 'Rating', 'Latitude', 'Longtitude', 'Provider'.
         Your will be given tools that can browse the web for information about specific aspects. You must use them should you require additional information about those aspects.
         If the web browser tool does not return relevant information about the aspects that you are looking for, just set None for that aspect.
         Do not make up any information.
 
         Example Input:
-        'Seongsan Ilchulbong'
+        "Lotte Hotel Jeju"
         
         Corresponding Output:
         {
-            "Name": "Seongsan Ilchulbong",
-            "Description": "Seongsan Ilchulbong, also known as 'Sunrise Peak,' is a UNESCO World Heritage site formed by a volcanic eruption over 5,000 years ago. It offers a breathtaking view of the sunrise from its peak, making it a popular destination for early morning hikers.",
-            "Price": "KRW 2,000",
-            "Address": "Seongsan-eup, Seogwipo-si, Jeju-do, South Korea",
-            "Latitude": "33.461111",
-            "Longitude": "126.940556"
+            "Name": "Lotte Hotel Jeju",
+            "Address": "35, Jungmungwangwang-ro 72beon-gil, Seogwipo-si, Jeju-do, South Korea",
+            "Price": "KRW 300,000 - 600,000 per night",
+            "Rating": "4.5 out of 5",
+            "Latitude": "33.247204",
+            "Longitude": "126.412185",
+            "Provider": "Lotte Hotels & Resorts"
         }
     """,
     llm=Settings.llm,
@@ -147,26 +159,76 @@ destination_detail_top_orchestrator_agent = OpenAIAgent.from_tools(
                 name='location address web browser tool',
                 description=f"Useful for browsing address of location."
             )
+        ),
+        QueryEngineTool(
+            query_engine=OpenAIAgent.from_tools(
+                tools=[
+                    FunctionTool.from_defaults(
+                        fn=tavily_browser_tool_rating,
+                        tool_metadata=ToolMetadata(
+                            name='location rating web browser tool',
+                            description=f"Useful for browsing rating of location."
+                        )
+                    )
+                ],
+                llm=Settings.llm,
+                verbose=VERBOSE,
+                system_prompt=f"""
+                    You are an assistant that browses the web for the rating of a location.
+                    You must use the web browser tool provided to you to search for information required, and answer based on the findings returned.
+                    Do not make up any information or reply on prior knowledge.
+                    If no related information is found, just respond with the word 'None'.
+                """
+            ),
+            metadata=ToolMetadata(
+                name='location rating web browser tool',
+                description=f"Useful for browsing rating of location."
+            )
+        ),
+        QueryEngineTool(
+            query_engine=OpenAIAgent.from_tools(
+                tools=[
+                    FunctionTool.from_defaults(
+                        fn=tavily_browser_tool_provider,
+                        tool_metadata=ToolMetadata(
+                            name='location provider web browser tool',
+                            description=f"Useful for browsing provider of location."
+                        )
+                    )
+                ],
+                llm=Settings.llm,
+                verbose=VERBOSE,
+                system_prompt=f"""
+                    You are an assistant that browses the web for the provider of a location.
+                    You must use the web browser tool provided to you to search for information required, and answer based on the findings returned.
+                    Do not make up any information or reply on prior knowledge.
+                    If no related information is found, just respond with the word 'None'.
+                """
+            ),
+            metadata=ToolMetadata(
+                name='location provider web browser tool',
+                description=f"Useful for browsing provider of location."
+            )
         )
     ]
 )
 
-list_destination_prompt = PromptTemplate(
+list_accomodation_prompt = PromptTemplate(
     """
-    You are an assistant that recommends a required number of tourist locations in Jeju Island to the end user.
-    You will be given the preferences and characteristics of the end user.
+    You are an assistant that recommends a required number of tourist accomodations in Jeju Island to the end user.
+    You will be given the preferences and/or characteristics and/or requirements of the end user.
     Your response MUST ONLY be a simple list (without any brackets), with items being separated by commas.
     
     Example Input:
-    End User Preferences and Characteristics: 'Nature Lover, Outgoing, Female, 21, ENFJ'
-    Number of Tourist Locations Required: 4
+    End User Preferences/Characteristics/Requirements: 'Nature Lover, Female, 21, ENFJ, Loves a view by the ocean, North part of Jeju island.'
+    Number of Tourist Accomodations Required: 4
     
     Corresponding Output:
-    Hallasan National Park, Seongsan Ilchulbong, Olle Trails, Cheonjeyeon Waterfall
+    Ramada Plaza Jeju Ocean Front, Ocean Suites Jeju Hotel, Hotel RegentMarine The Blue, Jeju Oriental Hotel & Casino
     
     Query:
-    End User Preferences and Characteristics: {end_user_specs}
-    Number of Tourist Locations Required: {num_spots}
+    End User Preferences/Characteristics/Requirements: {end_user_specs}
+    Number of Tourist Accomodations Required: {num_accomodations}
     """
 )
 
@@ -180,29 +242,29 @@ json_check_prompt = PromptTemplate(
 )
 
 
-formatted_destination_prompt = list_destination_prompt.format(end_user_specs=end_user_specs, num_spots=str(num_spots))
-destinations_string = Settings.llm.complete(formatted_destination_prompt)
-list_of_destinations = str(destinations_string).split(',')
+formatted_accomodation_prompt = list_accomodation_prompt.format(end_user_specs=end_user_specs, num_accomodations=str(num_accomodations))
+accomodations_string = Settings.llm.complete(formatted_accomodation_prompt)
+list_of_accomodations = str(accomodations_string).split(',')
 
 json_response_str = "["
-for destination in tqdm(list_of_destinations):
+for accomodation in tqdm(list_of_accomodations):
     output_is_json = False
     counter = 0
     try:
         while (not output_is_json) and (counter < max_json_try):
-            destination_json_str = destination_detail_top_orchestrator_agent.query(str(destination))
-            is_json = Settings.llm.complete(json_check_prompt.format(query_str=str(destination_json_str)))
+            accomodation_json_str = accomodation_detail_top_orchestrator_agent.query(str(accomodation))
+            is_json = Settings.llm.complete(json_check_prompt.format(query_str=str(accomodation_json_str)))
             if str(is_json).lower().strip() == 'yes':
                 output_is_json = True
-                json_response_str += str(destination_json_str)
+                json_response_str += str(accomodation_json_str)
                 json_response_str += ","
                 break
             else:
                 counter += 1
         if counter == max_json_try:
-            print(f"Error getting details in JSON format for destination: {destination}. Max tries reached.")
+            print(f"Error getting details in JSON format for accomodation: {accomodation}. Max tries reached.")
     except:
-        print(f"Error getting details for destination: {destination}")
+        print(f"Error getting details for accomodation: {accomodation}")
 if str(json_response_str).endswith(','):
     json_response_str = str(json_response_str)[:-1]
 json_response_str += "]"
