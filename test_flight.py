@@ -12,7 +12,7 @@ from llama_index.llms.groq import Groq
 from llama_index.llms.upstage import Upstage
 from llama_index.core.tools import QueryEngineTool, ToolMetadata, FunctionTool
 from llama_index.agent.openai import OpenAIAgent
-from prompts import contextualize_prompt, classify_prompt, qa_system_prompt, qa_prompt
+from prompts import contextualize_prompt, classify_prompt, qa_system_prompt, qa_prompt, flight_prompt
 
 load_dotenv()
 
@@ -22,19 +22,19 @@ Settings.llm = Groq(model='llama3-groq-70b-8192-tool-use-preview')
 # Config
 VERBOSE = False
 CLASSES = [
-    'accomodations',
-    'tourist spots',
-    'local ground transports',
+    # 'accomodations',
+    # 'tourist spots',
+    # 'local ground transports',
     'flights',
-    'eateries'
+    # 'eateries'
 ]
-CLASS_SPECIFIC_PROMPTS = {
-    'accomodations': "Name of the place, Location, Availability, Cost, etc.",
-    'tourist spots': "Name of the place, Location, Opening Times, Entrance Fees, etc.",
-    'local ground transports': "Transport Name, Transport ID, Transport Line, Cost, Scheduled times, Starting location, Ending location, Intermediary locations, etc.",
-    'flights': "Flight Company Name, Flight Number, Departure location, Destination location, Scheduled Time, Cost, Seats available, etc.",
-    'eateries': "Name of the place, Location, Opening Times, Menu, What is it famous for, Entrance Fees, Is booking required beforehand, etc."
-}
+# CLASS_SPECIFIC_PROMPTS = {
+#     'accomodations': "Name of the place, Location, Availability, Cost, etc.",
+#     'tourist spots': "Name of the place, Location, Opening Times, Entrance Fees, etc.",
+#     'local ground transports': "Transport Name, Transport ID, Transport Line, Cost, Scheduled times, Starting location, Ending location, Intermediary locations, etc.",
+#     'flights': "Flight Company Name, Flight Number, Departure location, Destination location, Scheduled Time, Cost, Seats available, etc.",
+#     'eateries': "Name of the place, Location, Opening Times, Menu, What is it famous for, Entrance Fees, Is booking required beforehand, etc."
+# }
 
 
 def tavily_browser_tool(input: str) -> str:
@@ -43,6 +43,7 @@ def tavily_browser_tool(input: str) -> str:
     """
     tavily = TavilyClient()
     info = tavily.search(query=input, search_depth="advanced")
+    print(">>> tavily", str(info))
     return str(info)
 
 
@@ -65,21 +66,16 @@ for CLASS in tqdm(CLASSES):
         class_agent_tools,
         llm=Settings.llm,
         verbose=VERBOSE,
-        system_prompt=f"""\
-            You are a specialized agent designed to answer queries about {CLASS}. 
-            YOU ARE TO answer in a detailed manner, which are the {CLASS_SPECIFIC_PROMPTS[CLASS]}.
-            You must ALWAYS use at least one of the tools provideed when answering a question.
-            DO NOT rely on prior knowledge. 
-            You must provide answers that are detailed and logical.
-            """
+        system_prompt=flight_prompt
+        # system_prompt=f"""\
+        #     You are a specialized agent designed to answer queries about {CLASS}. 
+        #     YOU ARE TO answer in a detailed manner, which are the {CLASS_SPECIFIC_PROMPTS[CLASS]}.
+        #     You must ALWAYS use at least one of the tools provideed when answering a question.
+        #     DO NOT rely on prior knowledge. 
+        #     You must provide answers that are detailed and logical.
+        #     """
     )
-            # system_prompt=f"""\
-            # You are a specialized agent designed to answer queries about {CLASS}. 
-            # Specifically, YOU ARE TO answer in a detailed manner, which are the Name, Location, Opening Times, Entrance Fees, etc.
-            # You must ALWAYS use at least one of the tools provideed when answering a question.
-            # DO NOT rely on prior knowledge. 
-            # You must provide answers that are detailed and logical.
-            # """
+
 
     agents[CLASS] = agent
 
@@ -189,7 +185,11 @@ query_engine = RAGQueryEngine(
 
 
 
-while True:
-    user_query = input("👱🏻 USER: ")
-    response = query_engine.custom_query(user_query)
-    print("\n🤖 JEJOM: ", response, "\n")
+# while True:
+#     user_query = input("👱🏻 USER: ")
+#     response = query_engine.custom_query(user_query)
+#     print("\n🤖 JEJOM: ", response, "\n")
+
+user_query = "Can you help me look for flights from Malaysia to Jeju Island? preferrably flying at night, on 1 September 2024"
+response = agents['flights'].query(user_query)
+print(response)

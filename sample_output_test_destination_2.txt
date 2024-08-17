@@ -1,0 +1,42 @@
+(rag-exploration) (base) 🎃 gohyixian Jejom % python test_destination.py
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [02:41<00:00, 32.35s/it]
+
+
+[{
+    "Name": "Seongsan Ilchulbong",
+    "Description": "Seongsan Ilchulbong, also known as 'Sunrise Peak,' is a UNESCO World Heritage site formed by a volcanic eruption over 5,000 years ago. It offers a breathtaking view of the sunrise from its peak, making it a popular destination for early morning hikers.",
+    "Price": "KRW 2,000",
+    "Address": "Seongsan-eup, Seogwipo-si, Jeju-do, South Korea",
+    "Latitude": "33.461111",
+    "Longitude": "126.940556"
+},{
+  "Name": "Hallasan National Park",
+  "Description": "Hallasan National Park is located on and around the mountain Hallasan in Jeju Province, South Korea. It was designated as the 9th national park in 1970. Hallasan is a shield volcano that is the highest mountain in South Korea. It was designated a UNESCO Biosphere Reserve in 2002, and a World Heritage Site in 2007. The park covers an area of 28,000 square kilometers and is home to diverse flora and fauna, cultural heritage sites, and hiking trails. Hallasan Mountain, the highest mountain in Korea with an altitude of 1,950 meters above sea level, is a destination not to be missed for those who love to explore nature. With a diverse ecosystem, from lush green forests to barren volcanic landscapes, it offers a variety of hiking trails for all levels. This easy hike takes just 30 minutes to hike to the top, starting at the Hallasan National Park Visitor Center. You can join a small group hike to Eoseungsaengak Trail. On this tour, you'll also visit Cheonjiyeon Falls and Jusangjeolli cliff. When reaching Eoseungtaeng Oreum, you can view the peak of the Hallasan and Jeju plains.",
+  "Price": "None",
+  "Address": "Jeju-do, South Korea",
+  "Latitude": "33.3922",
+  "Longitude": "126.4943"
+},{
+    "Name": "Olle Trails",
+    "Description": "The Jeju Olle Trail is a long-distance footpath on Jeju Island, South Korea. It consists of 21 connected numbered main routes, 6 sub-routes, and a short spur that connects to Jeju International Airport. The trails cover a distance of 425 km and are divided into 21 main routes and 5 sub-routes. The word 'olle' in the Jeju dialect means 'a narrow street that leads to a wider road'. The trails offer a unique culture, language, and environment, with the latest volcanic activity occurring a thousand years ago, proven through 380 oreums (small extinct volcanoes resembling ...",
+    "Price": "None",
+    "Address": "Jeju Island, South Korea",
+    "Latitude": "33.373056",
+    "Longitude": "126.531944"
+},{
+    "Name": "Cheonjeyeon Waterfall",
+    "Description": "Cheonjeyeon Waterfall is a three-tier waterfall located on Jeju Island, South Korea. It is a popular tourist attraction and one of the three famous waterfalls of Jeju, alongside Cheonjiyeon Waterfall and Jeongbang Waterfall. The waterfall has a total height of 22 meters and is known for its diverse plant and animal life. The best time to visit the waterfall is during spring and early summer when the weather is mild, and the surrounding nature is in full bloom. Evenings can also be a good time to visit as the falls are sometimes illuminated.",
+    "Price": "None",
+    "Address": "Jeju Island, South Korea",
+    "Latitude": "33.2528",
+    "Longitude": "126.4173"
+},{
+  "Name": "Manjanggul Lava Tube",
+  "Description": "Manjanggul Lava Tube is a significant natural monument located in Gimnyeong-ri, Jeju, South Korea. It is part of the Geomunoreum Lava Tube system and is one of the largest lava tubes in the world, stretching roughly 7,400 meters with a maximum height of 25 meters and width of 18 meters. It was designated as a Natural Monument in 1962 and is a UNESCO World Natural Heritage site. The lava tube is adorned with impressive stalactites, stalagmites, and lava formations, making it a unique and fascinating experience for visitors. It is well-preserved and holds great value as it was formed thousands of years ago.",
+  "Price": "None",
+  "Address": "Gimnyeong-ri, Gujwaeup, Jeju City, South Korea",
+  "Latitude": "33.491111",
+  "Longitude": "126.491111"
+}]
+============
+[{'Name': 'Seongsan Ilchulbong', 'Description': "Seongsan Ilchulbong, also known as 'Sunrise Peak,' is a UNESCO World Heritage site formed by a volcanic eruption over 5,000 years ago. It offers a breathtaking view of the sunrise from its peak, making it a popular destination for early morning hikers.", 'Price': 'KRW 2,000', 'Address': 'Seongsan-eup, Seogwipo-si, Jeju-do, South Korea', 'Latitude': '33.461111', 'Longitude': '126.940556'}, {'Name': 'Hallasan National Park', 'Description': "Hallasan National Park is located on and around the mountain Hallasan in Jeju Province, South Korea. It was designated as the 9th national park in 1970. Hallasan is a shield volcano that is the highest mountain in South Korea. It was designated a UNESCO Biosphere Reserve in 2002, and a World Heritage Site in 2007. The park covers an area of 28,000 square kilometers and is home to diverse flora and fauna, cultural heritage sites, and hiking trails. Hallasan Mountain, the highest mountain in Korea with an altitude of 1,950 meters above sea level, is a destination not to be missed for those who love to explore nature. With a diverse ecosystem, from lush green forests to barren volcanic landscapes, it offers a variety of hiking trails for all levels. This easy hike takes just 30 minutes to hike to the top, starting at the Hallasan National Park Visitor Center. You can join a small group hike to Eoseungsaengak Trail. On this tour, you'll also visit Cheonjiyeon Falls and Jusangjeolli cliff. When reaching Eoseungtaeng Oreum, you can view the peak of the Hallasan and Jeju plains.", 'Price': 'None', 'Address': 'Jeju-do, South Korea', 'Latitude': '33.3922', 'Longitude': '126.4943'}, {'Name': 'Olle Trails', 'Description': "The Jeju Olle Trail is a long-distance footpath on Jeju Island, South Korea. It consists of 21 connected numbered main routes, 6 sub-routes, and a short spur that connects to Jeju International Airport. The trails cover a distance of 425 km and are divided into 21 main routes and 5 sub-routes. The word 'olle' in the Jeju dialect means 'a narrow street that leads to a wider road'. The trails offer a unique culture, language, and environment, with the latest volcanic activity occurring a thousand years ago, proven through 380 oreums (small extinct volcanoes resembling ...", 'Price': 'None', 'Address': 'Jeju Island, South Korea', 'Latitude': '33.373056', 'Longitude': '126.531944'}, {'Name': 'Cheonjeyeon Waterfall', 'Description': 'Cheonjeyeon Waterfall is a three-tier waterfall located on Jeju Island, South Korea. It is a popular tourist attraction and one of the three famous waterfalls of Jeju, alongside Cheonjiyeon Waterfall and Jeongbang Waterfall. The waterfall has a total height of 22 meters and is known for its diverse plant and animal life. The best time to visit the waterfall is during spring and early summer when the weather is mild, and the surrounding nature is in full bloom. Evenings can also be a good time to visit as the falls are sometimes illuminated.', 'Price': 'None', 'Address': 'Jeju Island, South Korea', 'Latitude': '33.2528', 'Longitude': '126.4173'}, {'Name': 'Manjanggul Lava Tube', 'Description': 'Manjanggul Lava Tube is a significant natural monument located in Gimnyeong-ri, Jeju, South Korea. It is part of the Geomunoreum Lava Tube system and is one of the largest lava tubes in the world, stretching roughly 7,400 meters with a maximum height of 25 meters and width of 18 meters. It was designated as a Natural Monument in 1962 and is a UNESCO World Natural Heritage site. The lava tube is adorned with impressive stalactites, stalagmites, and lava formations, making it a unique and fascinating experience for visitors. It is well-preserved and holds great value as it was formed thousands of years ago.', 'Price': 'None', 'Address': 'Gimnyeong-ri, Gujwaeup, Jeju City, South Korea', 'Latitude': '33.491111', 'Longitude': '126.491111'}]
