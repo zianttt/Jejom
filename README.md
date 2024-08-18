@@ -1,28 +1,18 @@
-# Jejom
+## API Keys
+Create a file named <code>.env</code> at the same directory level as this <code>README.md</code>, and define the below:
+- <code>GROQ_API_KEY = "get_your_groq_api_key_<a href='https://console.groq.com/keys'>here</a>"</code>
+- <code>TAVILY_API_KEY = "get_your_tavily_api_key_<a href='https://app.tavily.com/sign-in'>here</a>"</code>
+- <code>UPSTAGE_API_KEY = "get_your_upstage_api_key_<a href='https://developers.upstage.ai/docs/getting-started/quick-start'>here</a>"</code>
 
-## Env Setup
 
-- <code>conda create -n jejom python=3.10</code>
-- <code>pip install llama-index</code>
-- <code>pip install llama-index-llms-upstage</code>
-- <code>pip install llama-hub</code>
-- <code>pip install tavily-python==0.2.8</code>
-- <code>pip install llama-index-tools-tavily-research</code>
+<br/>
 
-<!-- 
-- conda create -n jejom_lc python=3.10
-- conda acitvate jejom_lc
-- conda install langchain
-- pip install tavily-python==0.2.8
-- pip install langchain-openai
-- pip install langchain_openai
-- pip install beautifulsoup4
-- pip install faiss-cpu
-- pip install langchainhub
-- pip install "langserve[all]"
-- pip install numexpr
-- pip install flask
-- pip install flask_cors
-- pip install openai
-- pip install pandas
-- pip install langchain-groq -->
+## Python: Conda ENV Setup
+- <code>conda env create -f environment.yml</code>
+
+
+<br/>
+
+## Running the Backend
+- <code>conda activate jejom-llama</code>
+- <code>python server.py</code>

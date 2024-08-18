@@ -12,7 +12,7 @@ from llama_index.llms.groq import Groq
 from llama_index.llms.upstage import Upstage
 from llama_index.core.tools import QueryEngineTool, ToolMetadata, FunctionTool
 from llama_index.agent.openai import OpenAIAgent
-from prompts import contextualize_prompt, classify_prompt, qa_system_prompt, qa_prompt
+from tests.prompts import contextualize_prompt, classify_prompt, qa_system_prompt, qa_prompt
 
 load_dotenv()
 

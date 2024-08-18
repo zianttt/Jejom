@@ -6,6 +6,8 @@ dependencies:
   - pip=24.2
   - python=3.12.5
   - pip:
+      - flask==3.0.3
+      - flask-cors==4.0.1
       - gitpython==3.1.43
       - json_repair==0.28.0
       - llama-index==0.10.65
