@@ -1,0 +1,27 @@
+Soo-jin:
+
+* Key Clue 1: "I found a strange amulet near the latest murder scene. It seems to have some kind of spiritual significance."
+* Key Clue 2: "Dong-hyun has been acting suspiciously and seems to know more about the spirit causing the murders than he's letting on."
+* Misleading Clue 1: "The villagers believe that the spirit is a vengeful ghost seeking revenge on the village. Could this be true?"
+* Misleading Clue 2: "I found a letter in Joon-ho's possession that seems to be a love letter. Could Joon-ho be the spirit seeking revenge on his lover?"
+
+Joon-ho:
+
+* Key Clue 1: "I had a vision that revealed the spirit's true identity. It's not a ghost, but someone who is using dark magic to control the spirit."
+* Key Clue 2: "Dong-hyun has been acting suspiciously and seems to know more about the spirit causing the murders than he's letting on."
+* Misleading Clue 1: "The villagers believe that the spirit is a vengeful ghost seeking revenge on the village. Could this be true?"
+* Misleading Clue 2: "I found a letter in Soo-jin's possession that seems to be a personal letter. Could Soo-jin be the spirit seeking revenge on someone from her past?"
+
+Eun-hee:
+
+* Key Clue 1: "I had a vision that revealed the spirit's true identity. It's not a ghost, but someone who is using dark magic to control the spirit."
+* Key Clue 2: "Dong-hyun has been acting suspiciously and seems to know more about the spirit causing the murders than he's letting on."
+* Misleading Clue 1: "The villagers believe that the spirit is a vengeful ghost seeking revenge on the village. Could this be true?"
+* Misleading Clue 2: "I found a letter in Soo-jin's possession that seems to be a personal letter. Could Soo-jin be the spirit seeking revenge on someone from her past?"
+
+Dong-hyun:
+
+* Key Clue 1: "I have a personal connection to the spirit causing the murders. It's my sister, who was wrongfully accused of a crime and killed by the villagers. She's seeking revenge on the village."
+* Key Clue 2: "Joon-ho and Eun-hee have been acting suspiciously and seem to know more about the spirit causing the murders than they're letting on."
+* Misleading Clue 1: "The villagers believe that the spirit is a vengeful ghost seeking revenge on the village. Could this be true?"
+* Misleading Clue 2: "I found a letter in Soo-jin's possession that seems to be a personal letter. Could Soo-jin be the spirit seeking revenge on someone from her past?"
