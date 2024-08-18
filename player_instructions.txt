@@ -1,31 +1,246 @@
-Jin-hee:
+Character 1:
 
-1. Round 1: Introduce yourself as Jin-hee, a historian who has been working on the restoration of the House of Whispers. Express your excitement about finally being able to see the House and share its stories with the world.
-2. Round 2: Collect clues from the other players. Listen carefully to their responses and try to gather as much information as possible about the murder.
-3. Round 3: Participate in the open discussion. Share your thoughts and theories about the murder, but be careful not to reveal too much about your own actions.
-4. Round 4: Collect more clues from the other players. Use your knowledge of the House of Whispers to ask questions and gather information.
-5. Round 5: Vote out the player you suspect is the murderer. Use the clues you have collected and your own intuition to make your decision.
+Round 1:
+- Introduce yourself as a curious and observant individual.
+- Ask questions about the crime scene and the victim.
+- Show interest in finding out who the murderer is.
 
-Seong-ho:
+Round 2:
+- Collect clues from the other players.
+- Take mental notes of the information provided.
+- Ask follow-up questions to clarify any doubts.
 
-1. Round 1: Introduce yourself as Seong-ho, a journalist who is investigating the murder at the House of Whispers. Express your determination to solve the case and bring the killer to justice.
-2. Round 2: Collect clues from the other players. Listen carefully to their responses and try to gather as much information as possible about the murder.
-3. Round 3: Participate in the open discussion. Share your thoughts and theories about the murder, but be careful not to reveal too much about your own actions.
-4. Round 4: Collect more clues from the other players. Use your knowledge of the House of Whispers to ask questions and gather information.
-5. Round 5: Vote out the player you suspect is the murderer. Use the clues you have collected and your own intuition to make your decision.
+Round 3:
+- Engage in open discussion about the crime scene and the clues collected.
+- Share your own observations and theories.
+- Listen actively to the other players' ideas.
 
-Eun-ju:
+Round 4:
+- Collect more clues from the other players.
+- Analyze the information gathered and form a hypothesis about the murderer.
 
-1. Round 1: Introduce yourself as Eun-ju, a curator who has been working on the restoration of the House of Whispers. Express your excitement about finally being able to see the House and share its stories with the world.
-2. Round 2: Collect clues from the other players. Listen carefully to their responses and try to gather as much information as possible about the murder.
-3. Round 3: Participate in the open discussion. Share your thoughts and theories about the murder, but be careful not to reveal too much about your own actions.
-4. Round 4: Collect more clues from the other players. Use your knowledge of the House of Whispers to ask questions and gather information.
-5. Round 5: Vote out the player you suspect is the murderer. Use the clues you have collected and your own intuition to make your decision.
+Round 5:
+- Vote for the player you believe is the murderer.
+- Justify your vote with the evidence you have collected.
 
-Joon-ho:
+Character 2:
 
-1. Round 1: Introduce yourself as Joon-ho, a detective who is investigating the murder at the House of Whispers. Express your determination to solve the case and bring the killer to justice.
-2. Round 2: Collect clues from the other players. Listen carefully to their responses and try to gather as much information as possible about the murder.
-3. Round 3: Participate in the open discussion. Share your thoughts and theories about the murder, but be careful not to reveal too much about your own actions.
-4. Round 4: Collect more clues from the other players. Use your knowledge of the House of Whispers to ask questions and gather information.
-5. Round 5: Vote out the player you suspect is the murderer. Use the clues you have collected and your own intuition to make your decision.
+Round 1:
+- Introduce yourself as a friendly and helpful person.
+- Express your shock and sadness about the crime.
+- Offer to help in any way you can.
+
+Round 2:
+- Collect clues from the other players.
+- Be open and honest about the information you have.
+
+Round 3:
+- Engage in open discussion about the crime scene and the clues collected.
+- Share your own observations and theories.
+- Listen actively to the other players' ideas.
+
+Round 4:
+- Collect more clues from the other players.
+- Analyze the information gathered and form a hypothesis about the murderer.
+
+Round 5:
+- Vote for the player you believe is the murderer.
+- Justify your vote with the evidence you have collected.
+
+Character 3:
+
+Round 1:
+- Introduce yourself as a suspicious and guarded individual.
+- Ask probing questions about the crime scene and the victim.
+- Show skepticism towards the other players' stories.
+
+Round 2:
+- Collect clues from the other players.
+- Be cautious and skeptical of the information provided.
+- Ask follow-up questions to clarify any inconsistencies.
+
+Round 3:
+- Engage in open discussion about the crime scene and the clues collected.
+- Share your own observations and theories.
+- Listen actively to the other players' ideas.
+
+Round 4:
+- Collect more clues from the other players.
+- Analyze the information gathered and form a hypothesis about the murderer.
+
+Round 5:
+- Vote for the player you believe is the murderer.
+- Justify your vote with the evidence you have collected.
+
+Character 4:
+
+Round 1:
+- Introduce yourself as a friendly and trustworthy person.
+- Express your concern for the victim and their loved ones.
+- Offer to help in any way you can.
+
+Round 2:
+- Collect clues from the other players.
+- Be open and honest about the information you have.
+
+Round 3:
+- Engage in open discussion about the crime scene and the clues collected.
+- Share your own observations and theories.
+- Listen actively to the other players' ideas.
+
+Round 4:
+- Collect more clues from the other players.
+- Analyze the information gathered and form a hypothesis about the murderer.
+
+Round 5:
+- Vote for the player you believe is the murderer.
+- Justify your vote with the evidence you have collected.
+
+Character 5:
+
+Round 1:
+- Introduce yourself as a confident and assertive individual.
+- Ask direct questions about the crime scene and the victim.
+- Show a willingness to take charge of the investigation.
+
+Round 2:
+- Collect clues from the other players.
+- Take mental notes of the information provided.
+- Ask follow-up questions to clarify any doubts.
+
+Round 3:
+- Engage in open discussion about the crime scene and the clues collected.
+- Share your own observations and theories.
+- Listen actively to the other players' ideas.
+
+Round 4:
+- Collect more clues from the other players.
+- Analyze the information gathered and form a hypothesis about the murderer.
+
+Round 5:
+- Vote for the player you believe is the murderer.
+- Justify your vote with the evidence you have collected.
+
+Character 6:
+
+Round 1:
+- Introduce yourself as a quiet and reserved person.
+- Ask thoughtful questions about the crime scene and the victim.
+- Show a preference for listening and observing rather than speaking.
+
+Round 2:
+- Collect clues from the other players.
+- Take mental notes of the information provided.
+- Ask follow-up questions to clarify any doubts.
+
+Round 3:
+- Engage in open discussion about the crime scene and the clues collected.
+- Share your own observations and theories.
+- Listen actively to the other players' ideas.
+
+Round 4:
+- Collect more clues from the other players.
+- Analyze the information gathered and form a hypothesis about the murderer.
+
+Round 5:
+- Vote for the player you believe is the murderer.
+- Justify your vote with the evidence you have collected.
+
+Character 7:
+
+Round 1:
+- Introduce yourself as a flirtatious and charming individual.
+- Ask engaging questions about the crime scene and the victim.
+- Show a willingness to use your charms to gather information.
+
+Round 2:
+- Collect clues from the other players.
+- Take mental notes of the information provided.
+- Ask follow-up questions to clarify any doubts.
+
+Round 3:
+- Engage in open discussion about the crime scene and the clues collected.
+- Share your own observations and theories.
+- Listen actively to the other players' ideas.
+
+Round 4:
+- Collect more clues from the other players.
+- Analyze the information gathered and form a hypothesis about the murderer.
+
+Round 5:
+- Vote for the player you believe is the murderer.
+- Justify your vote with the evidence you have collected.
+
+Character 8:
+
+Round 1:
+- Introduce yourself as a stern and authoritative individual.
+- Ask direct and to-the-point questions about the crime scene and the victim.
+- Show a willingness to take charge of the investigation.
+
+Round 2:
+- Collect clues from the other players.
+- Take mental notes of the information provided.
+- Ask follow-up questions to clarify any doubts.
+
+Round 3:
+- Engage in open discussion about the crime scene and the clues collected.
+- Share your own observations and theories.
+- Listen actively to the other players' ideas.
+
+Round 4:
+- Collect more clues from the other players.
+- Analyze the information gathered and form a hypothesis about the murderer.
+
+Round 5:
+- Vote for the player you believe is the murderer.
+- Justify your vote with the evidence you have collected.
+
+Character 9:
+
+Round 1:
+- Introduce yourself as a friendly and outgoing person.
+- Ask enthusiastic questions about the crime scene and the victim.
+- Show a willingness to get to know the other players.
+
+Round 2:
+- Collect clues from the other players.
+- Be open and honest about the information you have.
+
+Round 3:
+- Engage in open discussion about the crime scene and the clues collected.
+- Share your own observations and theories.
+- Listen actively to the other players' ideas.
+
+Round 4:
+- Collect more clues from the other players.
+- Analyze the information gathered and form a hypothesis about the murderer.
+
+Round 5:
+- Vote for the player you believe is the murderer.
+- Justify your vote with the evidence you have collected.
+
+Character 10:
+
+Round 1:
+- Introduce yourself as a serious and focused individual.
+- Ask probing questions about the crime scene and the victim.
+- Show a willingness to get to the bottom of the mystery.
+
+Round 2:
+- Collect clues from the other players.
+- Take mental notes of the information provided.
+- Ask follow-up questions to clarify any doubts.
+
+Round 3:
+- Engage in open discussion about the crime scene and the clues collected.
+- Share your own observations and theories.
+- Listen actively to the other players' ideas.
+
+Round 4:
+- Collect more clues from the other players.
+- Analyze the information gathered and form a hypothesis about the murderer.
+
+Round 5:
+- Vote for the player you believe is the murderer.
+- Justify your vote with the evidence you have collected.

@@ -1,41 +1,39 @@
-Character 1: Jin-hee
+Detective Lee:
 
-Backstory: Jin-hee is a young woman who has always been fascinated by the stories and traditions of Jeju Island, particularly those surrounding the House of Whispers. She inherited the house from her late grandmother, who was a renowned storyteller and cultural figure on the island. Jin-hee dreams of restoring the house to its former glory and reviving the cultural traditions that once thrived there.
+Backstory: Detective Lee was born and raised in the bustling city, but her grandmother, a renowned storyteller, often regaled her with tales of Jeju Island's myths and legends. This instilled in her a deep sense of justice and a desire to uncover the truth.
 
-Motivation: Jin-hee is driven by a desire to honor her grandmother's legacy and to preserve the cultural heritage of Jeju Island. She is determined to restore the House of Whispers and to share its stories with the world.
+Motivation: Detective Lee is determined to solve the murder case and uncover the truth behind the family's curse, as she believes it is her duty to bring justice to those who have suffered.
 
-Secret: Jin-hee has a deep fear of the supernatural, stemming from a traumatic experience she had as a child. She is hesitant to delve too deeply into the legends and myths of Jeju Island, fearing that she may unleash forces beyond her control.
+Secret: Detective Lee has a deep-seated fear of the supernatural, stemming from her grandmother's stories of Jeju Island's spiritual world.
 
-Relationships: Jin-hee is close to Seong-ho, who was a close friend of her grandmother. She admires his talent and his deep understanding of Jeju Island's legends and myths. She is initially wary of Eun-ju, but as she gets to know her, she comes to appreciate her skills as a healer and her deep connection to the natural world.
+Relationships: Detective Lee has a professional relationship with Heo, as they both seek to uncover the truth behind the murder. She also has a close friendship with Yoon, as they share a mutual interest in Jeju Island's history and culture.
 
-Character 2: Seong-ho
+Heo:
 
-Backstory: Seong-ho is a talented musician and storyteller who was a close friend of Jin-hee's grandmother. He has spent his life traveling the world, sharing the stories and traditions of Jeju Island with anyone who will listen. He is a beloved figure in the community, known for his captivating performances and deep understanding of Jeju Island's legends and myths.
+Backstory: Heo is the wealthy businessman's estranged son, who returns to the mansion after years of absence. He is haunted by the ghosts of his past, including the memory of his mother, who was rumored to be a powerful shaman with ties to Jeju Island's spiritual world.
 
-Motivation: Seong-ho is driven by a passion for storytelling and a desire to preserve the cultural heritage of Jeju Island. He is determined to share the stories of the House of Whispers with the world, even as the city around him descends into chaos.
+Motivation: Heo is driven by a desire to uncover the truth about his mother's disappearance and the curse that has plagued his family for generations.
 
-Secret: Seong-ho has a secret love for Jin-hee, which he has kept hidden for years. He is torn between his desire to protect her and his fear of losing her.
+Secret: Heo has a deep-seated fear of the supernatural, stemming from his mother's rumored ties to Jeju Island's spiritual world.
 
-Relationships: Seong-ho is close to Jin-hee, who he sees as a kindred spirit. He is also close to Eun-ju, who he met on one of his travels and who he believes may hold the key to unlocking the secrets of the House of Whispers.
+Relationships: Heo has a strained relationship with his father, as he resents the latter's shady dealings and illicit activities. He also has a professional relationship with Detective Lee, as they both seek to uncover the truth behind the murder.
 
-Character 3: Eun-ju
+Yoon:
 
-Backstory: Eun-ju is a mysterious woman who arrives in Seoul seeking refuge from the war. She is a skilled healer and herbalist, with a deep connection to the natural world and the spirits that inhabit it. She has spent her life traveling the world, studying the legends and myths of different cultures and seeking to unlock their secrets.
+Backstory: Yoon is a local journalist with a keen interest in Jeju Island's history and culture. He has spent years researching the island's legends and myths, and is determined to uncover the truth behind the murder, believing it to be connected to a centuries-old curse that has plagued the family for generations.
 
-Motivation: Eun-ju is driven by a desire to understand the mysteries of the world and to use her skills to help others. She is drawn to the House of Whispers and the stories it holds, and she believes that she may be able to help Jin-hee and Seong-ho uncover its secrets.
+Motivation: Yoon is driven by a desire to uncover the truth and expose the family's dark secrets, as he believes it is his duty to bring justice to those who have suffered.
 
-Secret: Eun-ju is haunted by a past trauma that has left her with a deep fear of the supernatural. She is hesitant to delve too deeply into the legends and myths of Jeju Island, fearing that she may unleash forces beyond her control.
+Secret: Yoon has a deep-seated fear of the supernatural, stemming from his research into Jeju Island's spiritual world.
 
-Relationships: Eun-ju is initially wary of Jin-hee and Seong-ho, but as she gets to know them, she comes to appreciate their passion for preserving the cultural heritage of Jeju Island. She is also drawn to Joon-ho, who she sees as a kindred spirit in his quest for justice.
+Relationships: Yoon has a close friendship with Detective Lee, as they share a mutual interest in Jeju Island's history and culture. He also has a professional relationship with Heo, as they both seek to uncover the truth behind the murder.
 
-Character 4: Joon-ho
+Park:
 
-Backstory: Joon-ho is a detective with the Seoul Police Department, assigned to investigate the murder that takes place at the House of Whispers. He is a determined and resourceful investigator, driven by a desire to bring justice to the victim and bring peace to the troubled city.
+Backstory: Park is a former employee of the businessman, who holds a deep-seated grudge against him. Park knows the dark secrets of the family and is willing to do whatever it takes to see justice served.
 
-Motivation: Joon-ho is driven by a desire to bring justice to the victim and to bring peace to the troubled city of Seoul. He is determined to uncover the truth behind the murder, even as he grapples with the challenges of the investigation.
+Motivation: Park is driven by a desire for revenge against the businessman, as he believes the latter deserves to be brought to justice for his shady dealings and illicit activities.
 
-Secret: Joon-ho has a deep fear of the supernatural, stemming from a traumatic experience he had as a child. He is hesitant to delve too deeply into the legends and myths of Jeju Island, fearing that he may unleash forces beyond his control.
+Secret: Park has a deep-seated fear of the supernatural, stemming from his knowledge of the family's dark secrets.
 
-Relationships: Joon-ho is initially wary of Jin-hee, Seong-ho, and Eun-ju, but as he gets to know them, he comes to appreciate their passion for preserving the cultural heritage of Jeju Island. He is also drawn to Eun-ju, who he sees as a kindred spirit in her quest for understanding the mysteries of the world.
-
-Throughout the story, the characters are influenced by the rich cultural heritage of Jeju Island, as they grapple with the consequences of their actions and the challenges of their environment. The House of Whispers serves as a symbol of the struggle between tradition and modernity, as the characters navigate the complexities of their relationships and the dark secrets that lie beneath the surface of their world.
+Relationships: Park has a strained relationship with the businessman, as he resents the latter's shady dealings and illicit activities. He also has a professional relationship with Detective Lee, as she seeks to uncover the truth behind the murder.

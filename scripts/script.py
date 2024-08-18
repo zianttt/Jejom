@@ -42,9 +42,17 @@ class ScriptGenerator:
             allow_delegation=False,
             llm=self.llm
         )
-        self.game_planner = Agent(
-            role="Game Planner",
-            goal=f"Design a complex and engaging character storyline inspired by the myths and legends of Jeju Island, Korea, to bring players challenge and enjoyment.",
+        self.titler = Agent(
+            role="Titler",
+            goal=f"Design a title for the murder mystery game",
+            backstory="""You are an experienced storyteller, well-versed in the essence of humanity and drama. You excel at constructing tight plots that immerse players.""",
+            verbose=True,
+            allow_delegation=False,
+            llm=self.llm
+        )
+        self.timer = Agent(
+            role="Timer",
+            goal=f"Write the duration of the time it takes to play the murder mystery game",
             backstory="""You are an experienced storyteller, well-versed in the essence of humanity and drama. You excel at constructing tight plots that immerse players.""",
             verbose=True,
             allow_delegation=False,
@@ -130,17 +138,23 @@ class ScriptGenerator:
             agent=self.clue_generator,
             output_file="player_clues.txt"
         )
-        self.title_time_task = Task(
-            description="""Write the title for the script generated and the time taken to play the game""",
-            expected_output="Output a title and the time taken to play the script.",
-            agent=self.game_planner,
+        self.title = Task(
+            description="""Write the title for the script generated.""",
+            expected_output="Output a title",
+            agent=self.titler,
             output_file="title.txt"
+        )
+        self.time = Task(
+            description="""Write the time taken to play the game""",
+            expected_output=" Write in the format'2-3 hours'. Thats's app.",
+            agent=self.timer,
+            output_file="time_taken.txt"
         )
 
     def run_tasks(self):
         crew = Crew(
-            agents=[self.script_planner, self.character_designer, self.script_writer_agent, self.clue_generator, self.player_writer_agent, self.game_planner],
-            tasks=[self.background_setting_task, self.character_creation_task, self.script_writing_task, self.clue_design_task, self.player_writing_instruction_task, self.title_time_task],
+            agents=[self.script_planner, self.character_designer, self.script_writer_agent, self.clue_generator, self.player_writer_agent, self.titler,self.timer],
+            tasks=[self.background_setting_task, self.character_creation_task, self.script_writing_task, self.clue_design_task, self.player_writing_instruction_task, self.title,self.time],
             verbose=True,
             process=Process.sequential
         )
