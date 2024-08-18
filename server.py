@@ -57,5 +57,16 @@ def get_destinations():
                                                                   check_match_from_cache_top_k=CHECK_MATCH_FROM_CACHE_TOP_K)
     return jsonify({"data": destinations_list_of_dicts})
 
+@app.route('/generate_trip', methods=['POST'])
+def generate_trip():
+    user_query = request.form.get('query')
+    user_properties = request.form.get('user_props')
+    print("generate_trip: ", user_query, user_properties)
+    trip_dict = pipeline.generate_trip(end_user_specs=str(user_properties),
+                                       end_user_final_query=str(user_query)+str(user_properties),
+                                       max_json_try=MAX_JSON_TRY,
+                                       check_match_from_cache_top_k=CHECK_MATCH_FROM_CACHE_TOP_K)
+    return jsonify({'data': trip_dict})
+
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1')
